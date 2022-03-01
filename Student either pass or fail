@@ -1,0 +1,48 @@
+import java.util.Scanner;
+
+public class Example1 {
+
+	public static void main(String[] args) {
+	    
+		Scanner s=new Scanner(System.in);
+		
+		  int project=0,internal=0,external=0;
+		  System.out.println("Enter project, internal and external score");
+		   int total=0;
+		  project=s.nextInt();
+		  internal=s.nextInt();
+		  external=s.nextInt();
+		  if(project>=50 && external>=50 && internal>=50) {
+			  total=(70*project)/100 + (20*external)/100+(10*internal)/100;
+			  System.out.println("Total marks : "+total);
+			  if(total>=90) {
+				  System.out.println("A grade");
+			  }
+			  else if(total>=70) {
+				  System.out.println("B grade");
+			  }
+			  else {
+				  System.out.println("C grade");
+			  }
+			  
+			  
+	       }
+		  else {
+			  if(project<50) {
+				  System.out.println("Failed in project and score is:"+project);
+			  }
+			  if(external<50) {
+				  System.out.println("Failed in external and score is:"+external);
+			  }
+			  if(internal<50) {
+				  System.out.println("Failed in internal and score is:"+internal);
+			  }
+		  }
+		  
+		  
+		  
+		
+		
+	}
+
+}
