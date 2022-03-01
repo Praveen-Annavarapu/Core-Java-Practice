@@ -1,0 +1,34 @@
+public class Example1 {
+
+	public static void main(String[] args) {
+	    
+		  Scanner s=new Scanner(System.in);
+		    System.out.println("Enter number to check it is Armstrong or not");
+		   int num=s.nextInt();   // 153
+		   int temp=num;
+		   int rem=0,digits=0,sum=0;
+		   // finding number of digits
+		   while(temp!=0) {
+			   temp=temp/10; 
+			   digits++;
+		   }
+		   temp=num;
+		   while(temp!=0) {
+			   rem=temp%10;
+			       
+			   sum=sum+(int)Math.pow(rem,digits);   // 0+27==>27+125 =>152+1=153
+			   temp=temp/10;
+			   
+		   }
+		  
+		   if(sum==num) {
+			   System.out.println("Armstrong number");
+		   }
+		   else {
+			   System.out.println("Not a Armstrong number");
+		   }
+		   
+		   
+	}
+
+}
