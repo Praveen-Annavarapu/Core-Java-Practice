@@ -13,10 +13,10 @@ public class Main {
     {
         try {
             // Throw an object of user defined exception
-            throw new MyException("GeeksGeeks");
+            throw new MyException("Praveen");
         }
         catch (MyException ex) {
-            System.out.println("Caught");
+            System.out.println("Annavarapu");
  
             // Print the message from MyException object
             System.out.println(ex.getMessage());
